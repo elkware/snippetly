@@ -1,0 +1,16 @@
+.hero {
+    background-color: #394046;
+    background-image: url("/public/header.png");
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    box-shadow: #9a8f60 0 0 40px 0;
+
+}
+
+.hero a {
+    color: #242628;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #688c72;
+    font-family: 'Cookie', cursive;
+}
