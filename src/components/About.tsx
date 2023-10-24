@@ -7,7 +7,7 @@ function About({state, setState} : {state: boolean, setState: (state: boolean) =
                     <a href="/" aria-label="Close" className="close" onClick={event => {
                         event.preventDefault();
                         setState(false);
-                    }}>x</a>
+                    }}>&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     About
                 </header>
                 <p>
