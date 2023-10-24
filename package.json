@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@types/prismjs": "^1.26.2"
+    "@types/prismjs": "^1.26.2",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

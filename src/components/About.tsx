@@ -4,10 +4,10 @@ function About({state, setState} : {state: boolean, setState: (state: boolean) =
         <dialog open={state}>
             <article>
                 <header>
-                    <a href="#" aria-label="Close" className="close" onClick={event => {
+                    <a href="/" aria-label="Close" className="close" onClick={event => {
                         event.preventDefault();
                         setState(false);
-                    }}></a>
+                    }}>x</a>
                     About
                 </header>
                 <p>

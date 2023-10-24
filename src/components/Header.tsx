@@ -8,7 +8,7 @@ function Header({setShowAbout} : {setShowAbout: (state: boolean) => void}) {
                   <li><a href={"/"}><strong>Snippetly</strong></a></li>
               </ul>
               <ul className={"rtl"}>
-                  <li><a href="#"  onClick={event => {
+                  <li><a href="/"  onClick={event => {
                       event.preventDefault();
                       setShowAbout(true);
                   }}>About</a></li>
