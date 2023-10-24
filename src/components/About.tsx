@@ -21,9 +21,12 @@ function About({state, setState} : {state: boolean, setState: (state: boolean) =
                     No code is sent to the server. Everything is done in the browser on your computer.
                     <br/><br/>
 
-                    Snippetly is open source and you can find the source code on github.
+                    Snippetly is open source and you can find the source code
+                    on <a href={"https://github.com/elkware/snippetly"} rel={"noreferrer"} target={"_blank"}>github</a>.
                     <br/><br/>
-                    If you like Snippetly, you can buy me a coffee.
+                    If you like Snippetly, you can <a href={"https://www.buymeacoffee.com/jozef"} target={"blank"}><img
+                    src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+                    style={{height: "36px", marginTop: "0px"}}/></a>
                 </p>
             </article>
         </dialog>
