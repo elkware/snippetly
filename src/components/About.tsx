@@ -24,7 +24,7 @@ function About({state, setState} : {state: boolean, setState: (state: boolean) =
                     on <a href={"https://github.com/elkware/snippetly"} rel={"noreferrer"} target={"_blank"}>github</a>.
                     <br/><br/>
                     If you like Snippetly, you can <a href={"https://www.buymeacoffee.com/jozef"} target={"blank"}><img
-                    src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+                    src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=jozef&button_colour=01aaff&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=F0DDff" alt="Buy Me A Coffee"
                     style={{height: "36px", marginTop: "0px"}}/></a>
                 </p>
             </article>

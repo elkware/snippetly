@@ -13,9 +13,8 @@ function Header({setShowAbout} : {setShowAbout: (state: boolean) => void}) {
                       setShowAbout(true);
                   }}>About</a></li>
 
-                  <li><a href={"https://www.buymeacoffee.com/jozef"} target={"blank"}><img
-                      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
-                      style={{height: "48px", marginTop: "-10px"}}/></a></li>
+                  <li><a href="https://www.buymeacoffee.com/jozef"><img alt="Buy me a coffee" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=jozef&button_colour=01aaff&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=F0DDff" style={{height: "48px", marginTop: "-10px"}}/></a>
+                  </li>
               </ul>
           </nav>
       </div>
