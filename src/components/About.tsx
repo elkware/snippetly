@@ -1,5 +1,4 @@
 function About({state, setState} : {state: boolean, setState: (state: boolean) => void}) {
-
     return (
         <dialog open={state}>
             <article>

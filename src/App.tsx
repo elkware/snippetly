@@ -8,12 +8,22 @@ import './App.css';
 
 import About from "./components/About";
 import Header from "./components/Header";
+import Toast from "./components/Toast";
 
 export default function Home() {
 
   const [code, setCode] = useState("");
   const [language, setLanguage] = useState("");
   const [showAbout, setShowAbout] = useState(false);
+  const [toasts, setToasts] = useState([] as { id: number, message: string, type: string }[]);
+
+  const addToast = (message: string, type: string = 'info') => {
+    const id = Date.now();
+    setToasts([...toasts, { id, message, type }]);
+    setTimeout(() => {
+      setToasts((currentToasts) => currentToasts.filter((toast) => toast.id !== id));
+    }, 3000);
+  };
 
   useEffect(() => {
     highlightAll();
@@ -43,6 +53,16 @@ export default function Home() {
 
   return (
       <>
+        <div>
+          {toasts.map((toast) => (
+              <Toast
+                  key={toast.id}
+                  message={toast.message}
+                  type={toast.type}
+                  onDismiss={() => setToasts((currentToasts) => currentToasts.filter((t) => t.id !== toast.id))}
+              />
+          ))}
+        </div>
         <About state={showAbout} setState={setShowAbout}/>
         <Header setShowAbout={setShowAbout}/>
         <section className={"container"}>
@@ -121,6 +141,7 @@ export default function Home() {
                 }).then(canvas => {
                       canvas.toBlob(blob => {
                             blob && navigator.clipboard.write([new ClipboardItem({'image/png': blob})]);
+                            addToast('Image copied to clipboard!', 'info');
                           }
                       )
                     }
