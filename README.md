@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Snippetly
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Snippetly is a web application that allows users to create images of code snippets.
+
+A fun project to learn React and Typescript.
+
+## Features
+
+- Create images of code snippets
+- Save images
+- Copy images to clipboard
+
+## Tech Stack
+
+- React
+- Typescript
+- PicoCSS
 
 ## Available Scripts
 
